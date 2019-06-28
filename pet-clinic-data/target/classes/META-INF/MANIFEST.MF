@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: pet-clinic-data
 Implementation-Version: 0.0.1
-Built-By: naresh.pattem
+Built-By: Aaradhya
 Implementation-Vendor-Id: guru.springframework
-Build-Jdk: 1.8.0_201
+Build-Jdk: 1.8.0_77
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/sfg-pet-clinic/pet-clinic-data
 Created-By: Maven Integration for Eclipse
