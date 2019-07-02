@@ -2,11 +2,13 @@ package guru.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import guru.springframework.model.Owner;
 import guru.springframework.model.Vet;
 import guru.springframework.services.OwnerService;
 import guru.springframework.services.VetService;
-
+@Service
 public class VetServiceMap extends AbstractServiceMap<Vet, Long> implements VetService
 {
 
@@ -22,7 +24,7 @@ public class VetServiceMap extends AbstractServiceMap<Vet, Long> implements VetS
 
 	@Override
 	public Vet save(Vet obj) {
-		return super.save(obj.getId(), obj);
+		return super.save( obj);
 	}
 
 	@Override

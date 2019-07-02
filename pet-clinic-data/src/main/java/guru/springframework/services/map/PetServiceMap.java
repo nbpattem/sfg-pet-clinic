@@ -2,11 +2,14 @@ package guru.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import guru.springframework.model.Owner;
 import guru.springframework.model.Pet;
 import guru.springframework.services.OwnerService;
 import guru.springframework.services.PetService;
 
+@Service
 public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetService
 {
 
@@ -22,7 +25,7 @@ public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetS
 
 	@Override
 	public Pet save(Pet obj) {
-		return super.save(obj.getId(), obj);
+		return super.save( obj);
 	}
 
 	@Override

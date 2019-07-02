@@ -2,9 +2,12 @@ package guru.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import guru.springframework.model.Owner;
 import guru.springframework.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractServiceMap<Owner, Long> implements OwnerService
 {
 
@@ -20,7 +23,7 @@ public class OwnerServiceMap extends AbstractServiceMap<Owner, Long> implements 
 
 	@Override
 	public Owner save(Owner obj) {
-		return super.save(obj.getId(), obj);
+		return super.save( obj);
 	}
 
 	@Override
